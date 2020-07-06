@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.23.3",
-    "d3": "4.13.0",
+    "d3": "^5.16.0",
     "lodash": "^4.17.15",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",

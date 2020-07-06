@@ -1,0 +1,84 @@
+.bar { 
+    fill: steelblue; 
+}
+
+.links line {
+    stroke: #aaa;
+}
+
+.nodes circle {
+    pointer-events: all;
+    stroke: none;
+    stroke-width: 40px;
+}
+
+
+
+.news-visualiser {
+    background-color: #3892d3;
+    background: #7db9e8;
+    background: -moz-linear-gradient(left, #7db9e8 15%, #3892d3 88%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(15%, #7db9e8), color-stop(88%, #3892d3));
+    background: -webkit-linear-gradient(left, #7db9e8 15%, #3892d3 88%);
+    background: -o-linear-gradient(left, #7db9e8 15%, #3892d3 88%);
+    background: -ms-linear-gradient(left, #7db9e8 15%, #3892d3 88%);
+    background: linear-gradient(to right, #7db9e8 15%, #3892d3 88%)
+}
+
+.news-visualiser .link {
+    fill: none;
+    stroke: #fff
+}
+
+.news-visualiser .link.fixed {
+    stroke: #157fcc
+}
+
+.news-visualiser .node circle {
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 1.5px
+}
+
+.news-visualiser text {
+    font: 10px sans-serif;
+    pointer-events: none
+}
+
+.news-visualiser .node text {
+    fill: #056fbc !important;
+    stroke: #fff;
+    font-weight: bolder;
+    font-size: 13px;
+    font-style: normal;
+    fill-opacity: 1;
+    stroke: none;
+    stroke-width: .6px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: .6;
+    font-family: Arial
+}
+
+.news-visualiser .node.fixed text {
+    fill: #fff !important;
+    stroke: none
+}
+
+.bigstroke {
+    stroke: #fff !important;
+    stroke-width: 6px !important
+}
+
+.node.fixed .bigstroke {
+    stroke: none !important;
+    stroke-width: 1px !important
+}
+
+.news-visualiser .node.fixed circle {
+    fill: #157fcc !important
+}
+
+.news-visualiser .node.linked circle {
+    stroke: #157fcc !important
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import data from './data';
+import d3data from './data/d3data';
 import { Layout } from 'antd';
 import View1 from './views/View1';
 import View2 from './views/View2';
@@ -7,6 +8,7 @@ import View3 from './views/View3';
 import View4 from './views/View4';
 import View5 from './views/View5';
 import View6 from './views/View6';
+import View7 from './views/View7';
 import './dashboard.css';
 
 const { Sider, Content, Footer } = Layout;
@@ -46,6 +48,11 @@ export default class Dashboard extends Component {
                                  .filter(user=>user.age>greaterThenAge);
         return (
             <div>
+                <Layout>
+                    <Content style={{ height: 300 }}>
+                        <View7 d3data={d3data}/>
+                    </Content>
+                </Layout>
                 <Layout style={{ height: 920 }}>
                     <Sider width={300} style={{backgroundColor:'#eee'}}>
                         <Content style={{ height: 200 }}>
